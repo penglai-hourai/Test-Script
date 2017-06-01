@@ -1,7 +1,7 @@
 srun_parameters="--unbuffered --time=00:30:00"
 srun_k80="srun --partition=hsw_k80 $srun_parameters"
 srun_p100="srun --partition=hsw_p100 $srun_parameters"
-nvprof_parameters="--force-overwrite --profile-from-start off --system-profiling off --continuous-sampling-interval 1"
+nvprof_parameters="--force-overwrite --profile-from-start off --system-profiling on"
 
 original="../cholmod_l_demo_original"
 modified="../cholmod_l_demo_modified"
