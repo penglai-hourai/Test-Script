@@ -1,7 +1,5 @@
 source ../configure.sh
 
-memsize_array=(9 12)
-
 for matrix in "${matrix_array[@]}"; do
     for memsize in "${memsize_array[@]}"; do
         export CHOLMOD_GPU_MEM_BYTES="${memsize}000000000"
