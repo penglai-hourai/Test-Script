@@ -8,6 +8,6 @@ modified="../cholmod_l_demo_modified"
 matrix_path="$HOME/Temp/Matrices"
 matrix_array=("Emilia_923" "Fault_639" "Flan_1565" "Serena" "inline_1" "ldoor" "nd24k")
 ngpu_array=(1 2 4)
-npara_array=(2 4 8 16)
+npara_array=(1 2 4 8 16)
 
 memsize_array=(3 6 15)
