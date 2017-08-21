@@ -7,7 +7,7 @@ original="../cholmod_l_demo_original"
 modified="../cholmod_l_demo_modified"
 modified_batched="../cholmod_l_batched_demo_modified"
 matrix_path="$HOME/Temp/Matrices"
-matrix_array=("Emilia_923" "Fault_639" "Flan_1565" "Serena" "audikw_1" "inline_1" "ldoor" "nd24k")
+matrix_array=("Emilia_923" "Fault_639" "Flan_1565" "G3_circuit" "Geo_1438" "Hook_1498" "Serena" "StocF-146" "apache2" "audikw_1" "bone010" "boneS10" "inline_1" "ldoor" "nd24k")
 ngpu_array=(1 2 4)
 npara_array=(1 2 4 8 16)
 
