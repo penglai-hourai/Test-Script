@@ -4,7 +4,7 @@ srun_hsw_p100="srun --partition=hsw_p100 $srun_parameters"
 nvprof_parameters="--force-overwrite --profile-from-start off --system-profiling on"
 
 original="$HOME/Temp/SuiteSparse-4.6.0-beta/CHOLMOD/Demo/cholmod_l_demo"
-modified="$HOMe/workspace/SuiteSparse/CHOLMOD/Demo/cholmod_l_demo"
+modified="$HOME/workspace/SuiteSparse/CHOLMOD/Demo/cholmod_l_demo"
 modified_batched="$HOME/workspace/SuiteSparse/CHOLMOD/Demo/cholmod_l_batched_demo"
 matrix_path="$HOME/Temp/Matrices"
 matrix_array=("Emilia_923" "Fault_639" "Flan_1565" "G3_circuit" "Geo_1438" "Hook_1498" "Serena" "StocF-146" "apache2" "audikw_1" "bone010" "boneS10" "inline_1" "ldoor" "nd24k")
