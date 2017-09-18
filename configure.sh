@@ -1,7 +1,7 @@
 srun_parameters="--unbuffered --time=00:30:00"
 srun_hsw_k80="srun --partition=hsw_k80 $srun_parameters"
 srun_hsw_p100="srun --partition=hsw_p100 $srun_parameters"
-nvprof_parameters="--force-overwrite --profile-from-start off --system-profiling on --continuous-sampling-interval 50"
+nvprof_parameters="--normalized-time-unit s --profile-from-start off --system-profiling on --continuous-sampling-interval 50 --force-overwrite"
 nvprof_command="nvprof ${nvprof_parameters}"
 
 original_old="$HOME/Temp/SuiteSparse-4.5.3/CHOLMOD/Demo/cholmod_l_demo"
