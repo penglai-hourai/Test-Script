@@ -1,8 +1,5 @@
 source ../configure.sh
 
-original_old="$HOME/Temp/SuiteSparse-4.5.3/CHOLMOD/Demo/cholmod_l_demo"
-modified_old="$HOME/Temp/SuiteSparse_streams/CHOLMOD/Demo/cholmod_l_demo"
-
 export CHOLMOD_NUM_GPUS=1
 for matrix in "${matrix_array[@]}"; do
     log_prefix="${matrix}_original"
