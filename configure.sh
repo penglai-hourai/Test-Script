@@ -6,10 +6,10 @@ srun_hsw_p100=""
 nvprof_parameters="--normalized-time-unit s --profile-from-start off --system-profiling on --continuous-sampling-interval 50 --force-overwrite"
 nvprof_command="nvprof ${nvprof_parameters}"
 
-subtree_root="$HOME/Temp/SuiteSparse_subtree_root/CHOLMOD/Demo/cholmod_l_demo"
-subtree_root_batched="$HOME/Temp/SuiteSparse_subtree_root/CHOLMOD/Demo/cholmod_l_batched_demo"
-modified="$HOME/workspace/SuiteSparse/CHOLMOD/Demo/cholmod_l_demo"
-modified_batched="$HOME/workspace/SuiteSparse/CHOLMOD/Demo/cholmod_l_batched_demo"
+subtreeRoot="$HOME/Temp/SuiteSparse_subtreeRoot/CHOLMOD/Demo/cholmod_l_demo"
+subtreeRoot_batched="$HOME/Temp/SuiteSparse_subtreeRoot/CHOLMOD/Demo/cholmod_l_batched_demo"
+subtree="$HOME/workspace/SuiteSparse/CHOLMOD/Demo/cholmod_l_demo"
+subtree_batched="$HOME/workspace/SuiteSparse/CHOLMOD/Demo/cholmod_l_batched_demo"
 matrix_path="$HOME/Temp/Matrices"
 
 matrix_array=("Emilia_923" "Fault_639" "Flan_1565" "Geo_1438" "Hook_1498" "Serena" "StocF-1465" "audikw_1" "bone010" "nd24k")
