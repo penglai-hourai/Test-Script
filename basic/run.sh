@@ -11,8 +11,8 @@ for ngpus in "${ngpu_array[@]}"; do
             ${srun_hsw_p100} ${subtreeRoot} ${matrix_path}/${matrix}.mtx 2>&1 | tee ${log_name}
             log_prefix="${matrix}_subtree_${ngpus}gpu_${npara}parallel"
             log_name="${log_prefix}.log"
-            echo "${srun_hsw_p100} ${modified} ${matrix_path}/${matrix}.mtx 2>&1 | tee ${log_name}"
-            ${srun_hsw_p100} ${modified} ${matrix_path}/${matrix}.mtx 2>&1 | tee ${log_name}
+            echo "${srun_hsw_p100} ${subtree} ${matrix_path}/${matrix}.mtx 2>&1 | tee ${log_name}"
+            ${srun_hsw_p100} ${subtree} ${matrix_path}/${matrix}.mtx 2>&1 | tee ${log_name}
         done
     done
 done
