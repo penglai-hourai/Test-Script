@@ -1,3 +1,5 @@
+#!/bin/bash
+
 srun_parameters="--unbuffered --time=00:30:00"
 srun_hsw_k80=""
 srun_hsw_p100=""

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 source ../configure.sh
 
 for ngpus in "${ngpu_array[@]}"; do
