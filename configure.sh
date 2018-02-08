@@ -8,6 +8,8 @@ srun_hsw_p100=""
 nvprof_parameters="--normalized-time-unit s --profile-from-start off --system-profiling on --continuous-sampling-interval 50 --force-overwrite"
 nvprof_command="nvprof ${nvprof_parameters}"
 
+root="$HOME/Temp/SuiteSparse_root/CHOLMOD/Demo/cholmod_l_demo"
+root_batched="$HOME/Temp/SuiteSparse_root/CHOLMOD/Demo/cholmod_l_batched_demo"
 subtree_root="$HOME/Temp/SuiteSparse_subtree_root/CHOLMOD/Demo/cholmod_l_demo"
 subtree_root_batched="$HOME/Temp/SuiteSparse_subtree_root/CHOLMOD/Demo/cholmod_l_batched_demo"
 subtree="$HOME/workspace/SuiteSparse/CHOLMOD/Demo/cholmod_l_demo"
