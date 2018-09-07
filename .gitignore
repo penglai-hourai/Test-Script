@@ -1,2 +1,6 @@
+# Do not ignore this file
+!.gitignore
+
+# Ignore these files:
 *.log
 *.nvvp
