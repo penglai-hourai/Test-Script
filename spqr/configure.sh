@@ -1,6 +1,6 @@
 #!/bin/bash
 
-nvprof_parameters="--normalized-time-unit s --profile-from-start off --system-profiling off --continuous-sampling-interval 50 --force-overwrite"
+nvprof_parameters="--normalized-time-unit s --profile-from-start off --system-profiling on --continuous-sampling-interval 50 --force-overwrite"
 nvprof_command="nvprof ${nvprof_parameters}"
 
 demo_old="$HOME/Temp/SuiteSparse/SPQR/Demo/qrdemo_gpu"
