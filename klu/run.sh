@@ -2,8 +2,8 @@
 
 source ../configure.sh
 
-demo_dir="$HOME/workspace/SparseFrame/LU"
-demo="Demo/demo"
+demo_dir="$HOME/workspace/SuiteSparse/KLU"
+demo="Demo/kludemo"
 
 for group_matrix in "${matrix_list_lu[@]}"; do
     matrix="$(cut -d '/' -f 2 <<< "${group_matrix}")"
@@ -16,6 +16,6 @@ for group_matrix in "${matrix_list_lu[@]}"; do
         make --directory=${demo_dir}
     fi
     log="${matrix}.log"
-    echo "${stdbuf_prefix} ${demo_dir}/${demo} ${matrix_dir}/${matrix}/${matrix}.mtx 2>&1 | tee ${log}"
-    ${stdbuf_prefix} ${demo_dir}/${demo} ${matrix_dir}/${matrix}/${matrix}.mtx 2>&1 | tee ${log}
+    echo "${stdbuf_prefix} ${demo_dir}/${demo} < ${matrix_dir}/${matrix}/${matrix}.mtx 2>&1 | tee ${log}"
+    ${stdbuf_prefix} ${demo_dir}/${demo} < ${matrix_dir}/${matrix}/${matrix}.mtx 2>&1 | tee ${log}
 done
