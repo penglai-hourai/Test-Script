@@ -29,7 +29,7 @@ for group_matrix in "${matrix_list_lu[@]}"; do
     ${stdbuf_prefix} ${demo_dir}/${demo} 2>&1 | tee ${log}
 done
 
-if [ ! -e tmp ]
+if [ -e tmp ]
 then
     rm -fr tmp
 fi
