@@ -3,7 +3,7 @@
 url_prefix="https://sparse.tamu.edu"
 url_surfix=".tar.gz"
 
-matrix_dir="$HOME/workspace/Matrices"
+matrix_dir="$HOME/workspace/Matrix"
 if [ ! -d ${matrix_dir} ]
 then
     mkdir -p ${matrix_dir}
