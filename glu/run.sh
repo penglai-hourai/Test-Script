@@ -2,7 +2,7 @@
 
 source ../configure.sh
 
-demo_dir="$HOME/workspace/GLU2.0rel/src"
+demo_dir="$HOME/workspace/GLU3.0rel/src"
 demo="lu_cmd"
 
 for group_matrix in "${matrix_list_lu[@]}"; do
