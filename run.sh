@@ -8,10 +8,6 @@ cd glu
 ./run.sh
 cd -
 
-cd superlu
-./run.sh
-cd -
-
 cd umfpack
 ./run.sh
 cd -
