@@ -2,10 +2,10 @@
 
 source ../configure.sh
 
-demo_dir="$HOME/workspace/SparseFrame/Cholesky"
+demo_dir="$HOME/workspace/Sparse-Matrix-Factorization-Library/LU"
 demo="Demo/demo"
 
-for group_matrix in "${matrix_list_cholesky[@]}"; do
+for group_matrix in "${matrix_list_lu[@]}"; do
     matrix="$(cut -d '/' -f 2 <<< "${group_matrix}")"
     if [ ! -f ${matrix_dir}/${matrix}/${matrix}.mtx ]
     then
