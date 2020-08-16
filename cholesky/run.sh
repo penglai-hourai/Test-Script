@@ -2,7 +2,7 @@
 
 source ../configure.sh
 
-demo_dir="$HOME/workspace/Sparse-Matrix-Factorization-Library/Cholesky"
+demo_dir="$HOME/workspace/Sparse-Matrix-Factorization-Library"
 demo="Demo/demo"
 
 for group_matrix in "${matrix_list_cholesky[@]}"; do
@@ -16,6 +16,6 @@ for group_matrix in "${matrix_list_cholesky[@]}"; do
         make --directory=${demo_dir}
     fi
     log="${matrix}.log"
-    echo "${stdbuf_prefix} ${demo_dir}/${demo} ${matrix_dir}/${matrix}/${matrix}.mtx 2>&1 | tee ${log}"
-    ${stdbuf_prefix} ${demo_dir}/${demo} ${matrix_dir}/${matrix}/${matrix}.mtx 2>&1 | tee ${log}
+    echo "${stdbuf_prefix} ${demo_dir}/${demo} cholesky ${matrix_dir}/${matrix}/${matrix}.mtx 2>&1 | tee ${log}"
+    ${stdbuf_prefix} ${demo_dir}/${demo} cholesky ${matrix_dir}/${matrix}/${matrix}.mtx 2>&1 | tee ${log}
 done

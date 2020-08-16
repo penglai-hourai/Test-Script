@@ -1,17 +1,13 @@
 #!/bin/bash
 
-cd sparseframelu
+cd cholmod
 ./run.sh
 cd -
 
-cd glu
+cd cholesky
 ./run.sh
 cd -
 
-cd umfpack
-./run.sh
-cd -
-
-cd klu
+cd lu
 ./run.sh
 cd -

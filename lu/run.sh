@@ -2,7 +2,7 @@
 
 source ../configure.sh
 
-demo_dir="$HOME/workspace/Sparse-Matrix-Factorization-Library/LU"
+demo_dir="$HOME/workspace/Sparse-Matrix-Factorization-Library"
 demo="Demo/demo"
 
 for group_matrix in "${matrix_list_lu[@]}"; do
@@ -16,6 +16,6 @@ for group_matrix in "${matrix_list_lu[@]}"; do
         make --directory=${demo_dir}
     fi
     log="${matrix}.log"
-    echo "${stdbuf_prefix} ${demo_dir}/${demo} ${matrix_dir}/${matrix}/${matrix}.mtx 2>&1 | tee ${log}"
-    ${stdbuf_prefix} ${demo_dir}/${demo} ${matrix_dir}/${matrix}/${matrix}.mtx 2>&1 | tee ${log}
+    echo "${stdbuf_prefix} ${demo_dir}/${demo} lu ${matrix_dir}/${matrix}/${matrix}.mtx 2>&1 | tee ${log}"
+    ${stdbuf_prefix} ${demo_dir}/${demo} lu ${matrix_dir}/${matrix}/${matrix}.mtx 2>&1 | tee ${log}
 done
