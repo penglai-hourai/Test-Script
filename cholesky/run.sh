@@ -2,7 +2,7 @@
 
 source ../configure.sh
 
-demo_dir="$HOME/workspace/Sparse-Matrix-Factorization-Library"
+demo_dir="$HOME/workspace/libspmtx"
 demo="Demo/demo"
 
 for group_matrix in "${matrix_list_cholesky[@]}"; do
